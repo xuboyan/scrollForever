@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>无缝轮播</title>
+
+<style type="text/css">
+
+*{ margin:0; padding:0;}
+ul{
+    text-align: center;
+}
+/* body{font:12px/1 '微软雅黑';background: #fff;} */
+
+/* 注意：
+
+无缝轮播必须脱离文档流，如果页面中需要展示其他内容，建议把轮播内容设置为定位
+
+*/
+
+</style>
+<script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>
+<script src="scrollForever.js"></script>
+</head>
+
+<body>
+        
+<div id="colee" style="overflow:hidden;height:100px;width:410px;border:1px solid red;">
+    <ul id="colee1" style="text-align: center;">
+        <li>最近更新的内容</li>
+        <li>一个简易时钟效果js实现代码</li>
+        <li>javascript browser浏览器类型以及版本判</li>
+        <li>常用Javascript函数与原型功能收藏(必看篇</li>
+        <li>JSON在Javascript中的使用（eval和JSON.p</li>
+        <li>屏蔽script注入小例子</li>
+        <li>js opener的使用详解详解详解详解</li>
+    </ul>
+</div>
+
+
+<script>
+$("#colee").scrollForever('colee');
+</script>
+
+</body>
+
+</html>
